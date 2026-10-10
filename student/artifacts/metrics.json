@@ -1,0 +1,34 @@
+{
+  "detection": {
+    "tp": 519,
+    "fp": 16,
+    "fn": 222,
+    "precision": 0.9700934579439252,
+    "recall": 0.7004048582995951
+  },
+  "tracking": {
+    "lidar": {
+      "rmse": 0.1503226832163003,
+      "matches": 502,
+      "sum_sq_err": 11.343648362852782,
+      "ghost_track_frames": 0,
+      "missed_gt_frames": 239,
+      "mean_confirmed_tracks": 2.522613065326633
+    },
+    "fused": {
+      "rmse": 0.13586677824355617,
+      "matches": 502,
+      "sum_sq_err": 9.2668102780024,
+      "ghost_track_frames": 0,
+      "missed_gt_frames": 239,
+      "mean_confirmed_tracks": 2.522613065326633
+    }
+  },
+  "fusion_mode": "compare",
+  "frames": [
+    0,
+    198
+  ],
+  "seed": 0,
+  "segment": "training_segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord"
+}

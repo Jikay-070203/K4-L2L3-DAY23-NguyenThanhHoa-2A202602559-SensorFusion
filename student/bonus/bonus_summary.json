@@ -1,0 +1,52 @@
+{
+  "frames": [
+    0,
+    198
+  ],
+  "seed": 0,
+  "segment": "training_segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord",
+  "lidar_rmse": 0.1503226832163003,
+  "fused_rmse_no_offset": 0.13586677824355617,
+  "baseline_camera_updates": 509,
+  "camera_update_mean_err_before": 0.13607686530082347,
+  "camera_update_mean_err_after": 0.12233337356585373,
+  "camera_update_share_improved": 0.5737051792828686,
+  "highlight_event": {
+    "frame": 150,
+    "track_id": 10,
+    "state": "confirmed",
+    "innovation_px": 23.687692887089696,
+    "d2": 6.210664281610931,
+    "meas_px": [
+      381.1722144528626,
+      795.9489462209169
+    ],
+    "pre_px": [
+      398.25555300719384,
+      779.5396093010052
+    ],
+    "post_px": [
+      385.7702366178818,
+      791.3187647736141
+    ],
+    "pos_before": [
+      27.58349058544883,
+      7.178893744578977,
+      0.6908201471478989
+    ],
+    "pos_after": [
+      27.536360582470515,
+      7.320372161839545,
+      0.544631469935217
+    ],
+    "err_before": 0.22052427720966972,
+    "err_after": 0.01405102500852824
+  },
+  "overlay_saved": true,
+  "figures": [
+    "fig1_bev_lidar_vs_fused.png",
+    "fig2_error_over_time.png",
+    "fig3_camera_overlay.png",
+    "fig4_calibration_study.png"
+  ]
+}

@@ -33,7 +33,8 @@ def mahalanobis_distance(track: Any, meas: Any) -> float:
     H = meas.sensor.get_H(track.x)
     gamma = kalman.innovation(track.x, meas)
     S = kalman.innovation_covariance(track.P, meas, H)
-    return float(gamma.T @ np.linalg.inv(S) @ gamma)
+    # .item() converts the 1x1 result; float() on a 2-D array fails on NumPy >= 2.
+    return float((gamma.T @ np.linalg.inv(S) @ gamma).item())
 
 
 def chi2_gate(mhd_sq: float, sensor: Any) -> bool:
